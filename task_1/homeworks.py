@@ -44,11 +44,11 @@ def top_three_names(mentors):
     top_3 = popular[0:3]
     return f'{top_3[0][0]}: {top_3[0][1]} раз(а), {top_3[1][0]}: {top_3[1][1]} раз(а), {top_3[2][0]}: {top_3[2][1]} раз(а)'
 
-def min_max_course(courses, mentors, durations):
+def min_max_course(courses, durations):
     courses_list = []
 
-    for title, mentor, duration in zip(courses, mentors, durations):
-        course_dict = {'title': title, 'mentors': mentor, 'duration': duration}
+    for title, duration in zip(courses, durations):
+        course_dict = {'title': title, 'duration': duration}
         courses_list.append(course_dict)
 
     min_d = min(durations)
@@ -75,4 +75,4 @@ def min_max_course(courses, mentors, durations):
 if __name__ == '__main__':
     print(unique_names(mentors))
     print(top_three_names(mentors))
-    print(min_max_course(courses, mentors, durations))
+    print(min_max_course(courses, durations))
