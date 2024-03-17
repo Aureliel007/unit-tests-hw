@@ -1,0 +1,6 @@
+[Yadisk]
+token = <Ваш токен>
+
+[YandexAuth]
+login = <Ваш логин>
+password = <Ваш пароль>
