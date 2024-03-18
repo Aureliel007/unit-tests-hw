@@ -1,6 +1,6 @@
 from configparser import ConfigParser
 import pytest
-from task_3.task_3_selenium import yandex_auth
+from task_3_selenium import yandex_auth
 
 
 config = ConfigParser()
